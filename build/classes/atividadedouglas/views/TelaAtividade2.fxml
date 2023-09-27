@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atividadedouglas.controllers.TelaAtividade2Controller">
+   <children>
+      <Text layoutX="39.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peso na Terra (kg):">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="40.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione o Planeta:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="resultado" layoutX="39.0" layoutY="85.0" />
+      <Button layoutX="222.0" layoutY="85.0" mnemonicParsing="false" onAction="#clickCalcularPeso" text="Calcular Peso" />
+      <RadioButton layoutX="40.0" layoutY="176.0" mnemonicParsing="false" text="Mercúrio">
+         <toggleGroup>
+            <ToggleGroup fx:id="planetas" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="127.0" layoutY="176.0" mnemonicParsing="false" text="Marte" toggleGroup="$planetas" />
+      <RadioButton layoutX="200.0" layoutY="176.0" mnemonicParsing="false" text="Saturno" toggleGroup="$planetas" />
+      <RadioButton layoutX="39.0" layoutY="210.0" mnemonicParsing="false" text="Vênus" toggleGroup="$planetas" />
+      <RadioButton layoutX="126.0" layoutY="210.0" mnemonicParsing="false" text="Júpiter" toggleGroup="$planetas" />
+      <RadioButton layoutX="201.0" layoutY="210.0" mnemonicParsing="false" text="Urano" toggleGroup="$planetas" />
+      <Button layoutX="35.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickVoltar" prefHeight="25.0" prefWidth="288.0" text="Voltar" />
+   </children>
+</Pane>
